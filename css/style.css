@@ -22,6 +22,46 @@
     display: none;
   }
 
+  .back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    width: 56px;
+    height: 56px;
+    background-color: #2e4435; /* 深緑 */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .back-to-top:hover {
+    background-color: #c2a661; /* ゴールド */
+    transform: scale(1.12);
+  }
+  
+  .back-to-top .icon-arrow {
+    width: 24px;
+    height: 24px;
+    stroke: white;
+    transition: stroke 0.3s ease;
+  }
+  
+  .back-to-top:hover .icon-arrow {
+    stroke: #ffffff;
+  }
+  
+  .back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+  }  
+
   .fadein-section {
     opacity: 0;
     transform: translateY(40px);
