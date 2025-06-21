@@ -241,7 +241,7 @@
   }
 
   .about-flurna {
-    background-image: url("../img/white_and_green_background.png"); 
+    /* background-image: url("../img/white_and_green_background.png");  */
     background-size: 100% auto;
     background-position: center;
     background-repeat: no-repeat;
